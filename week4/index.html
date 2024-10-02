@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week4</title>
+    <!--style is css-->
+    <style> 
+        table, td, th{
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Week 4 Learning</h1>
+    </header>
+    <main>
+        <!--learning about img tag--> 
+        <h2> Image tag example</h2>  
+        <img src="./images/coffee-shop.jpg" alt="coffee cup with coffee beans" width="500">
+
+        <a href="#cakes">Jump to cakes menu</a>
+
+        <img src="./images/coffee-shop.jpg" title="coffee cup with coffee beans" width="500">
+        <!-- If an image is decorative (no meaning) keep the alt tag empty alt="" -->
+
+        <!-- Learning about a (anchor) tag-->
+        <h2> Link tag example</h2>
+        <p> here is a link to visit <a href="https://google.com" target="_blank">Google Homepage</a>.</p>
+        <a href="./thanks.html">Thank you page.</a>
+
+
+<p>
+  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis at,
+  dignissimos ratione doloremque rerum non rem cum laudantium quia consectetur,
+  saepe perferendis aperiam iste reprehenderit fugit ipsa, excepturi impedit.
+  Saepe.
+</p>
+<p>
+  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis at,
+  dignissimos ratione doloremque rerum non rem cum laudantium quia consectetur,
+  saepe perferendis aperiam iste reprehenderit fugit ipsa, excepturi impedit.
+  Saepe.
+</p>
+    <ul id="cakes">
+     <li>Red Velvet</li>
+     <li>Tiramisu</li>
+     <li>Black Forest</li>
+    </ul>
+
+<!--tables in html-->
+<h2>Simple HTML tables</h2>
+<!--only use a table if you need a table; not for layout purposes-->
+<table>
+    <caption>Student Grade Information</caption>
+    <thead>
+        <tr>
+            <th>Student Name</th>
+            <th>Course Name</th>
+            <th>Grade</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td> John Smith</td>
+            <td>Web dev 1</td>
+            <td>A</td>
+        </tr>
+        <tr>
+            <td> Mel</td>
+            <td>Web dev 2</td>
+            <td>A+</td>
+        </tr>
+
+    </tbody>
+</table>
+<h2>Merging cells</h2>
+<table>
+    <thead>
+      <tr>
+        <th rowspan="2">Name</th>
+        <th colspan="2">Scores</th>
+      </tr>
+      <tr>
+        <th>Maths</th>
+        <th>English</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Bob</td>
+        <td>10/10</td>
+        <td>9/10</td>
+      </tr>
+      <tr>
+        <td>Fran</td>
+        <td>8/10</td>
+        <td>10/10</td>
+      </tr>
+    </tbody>
+  </table>
+
+<h3> Practice Making a Table</h3>
+  <table>
+    <caption> Fake Data</caption>
+    <!--colspan will merge the cells next to it-->
+    <!--rowspan will merge the cells below it-->
+    <thead>
+        <tr>
+            <th colspan="2">Days</th>
+            <th colspan="2">Month </th>
+        </tr>
+        <tr>
+            <th>Mon</th>
+            <th>Wed</th>
+            <th>Jan</th>
+            <th>Sep</th> 
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>3</td>
+            <td>2</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>9</td>
+            <td>8</td>
+            <td>7</td>
+        </tr>
+    </tbody>
+  </table>
+  <!--tr (table row tag) is necessity; inside place th (table header) or td (data cell) -->
+
+<!--form elements-->
+<h2> HTML Form Elements</h2>
+<form action="./thanks.html" method="get">
+    <label for="fullname">Name:</label>
+    <input id="fullname" type="text"placeholder="John" name="fullname">
+    
+    <label for="age">Age:</label>
+    <input id="age" type="number" min="0" max="20" step="2" name="age">
+    
+    <button type="submit">Send</button>
+
+    <label for="message">Your Message</label>
+    <textarea id="message"></textarea>
+
+    <label for="cakes">Choose your Cake</label>
+    <select id="cakes" name="cakes">
+        <option value="red velvet">Red Velvet</option>
+        <option value="tiramisu">Tiramisu</option>
+        <option value="black forest">Black Forest</option>
+    </select>
+</form>
+</main>
+</body>
+</html>

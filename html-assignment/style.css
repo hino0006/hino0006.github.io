@@ -1,0 +1,27 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+}
+header, footer{
+   background-color: bisque; 
+}
+.site-title{
+    color: brown;
+}
+#my-image{
+    box-shadow: 10px 10px 2px 1px;    
+}
+ul.x{
+    list-style-type: square;
+}
+li:nth-child(odd){
+    background-color: burlywood;
+}
+a:link{
+    text-decoration: none;
+    background-color: burlywood;
+    border: 2px solid brown;
+}
+a:hover{
+    background-color: pink;
+}

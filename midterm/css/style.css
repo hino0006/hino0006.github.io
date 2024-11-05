@@ -1,0 +1,61 @@
+body{
+    background-color: #aad4cf;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.container{
+    max-width: 80%;
+    margin: 0 auto;
+    background-color: #bfdfdc;
+}
+header{
+    background-color: #aad4cf;
+    color:whitesmoke;
+    padding: 10rem 0;
+    text-align: center;
+    background-image: url(../images/lone-starfish-wide.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+h1{
+    font-size: 3rem;
+}
+/*float for image to be in-line with the text and text wrap around it */
+img{
+    width: 200px;
+    float: left;
+    padding: 5px;
+}
+
+/*this section below applies to the taskbar under the banner - no hyperlinks*/
+.space{
+    display: inline-block;
+    border-width: 1px;
+    border-style: solid;
+    border-color: grey;
+    height: 20px;
+}
+nav ul li{ 
+   list-style: none;
+   display: inline-block;
+   width: 31%;
+   text-align: center; 
+   text-transform: uppercase;
+}
+input, textarea{
+    width: 100%; 
+}
+textarea{
+    height: 75px;
+}
+/* the radio button formatting was changed by the input textarea section of the css code and couldn't find a way to isolate it to reformat it without changing the textarea and input above it*/
+button{
+    font-size: 12px;
+    padding: 10px;
+    background-color: #bfdfdc;
+}
+footer{
+    text-align: right;
+    font-size: 14px;
+    padding: 1.5rem;
+}

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <!--format for mobile not desktop-->
+
 <body>
     <!--div is for the navigation bar at the top of the page-->
     <!--currently unsure whether or not to use nav tag or div tag...-->
@@ -21,6 +22,7 @@
             <li>Contact</li>
         </ul>
         <input type="text" placeholder="Search..">
+        <button><i class="fa-solid fa-magnifying-glass"></i></button>
     </nav>
     <!--header will house the background photo, main title of page, button, and small text-->
     <!---->
@@ -32,40 +34,173 @@
                 similique nihil laboriosam provident neque, recusandae voluptate temporibus! Animi accusamus id fuga
                 voluptatibus facilis iusto consequuntur! </p>
         </div>
+        <button>Connect with us <i class="fa-solid fa-caret-right"></i></button>
     </header>
     <!--main will need to be split into multiple sections for the services, vision, team and contact-->
     <main>
-        <section>about us 
+        <section class="aboot">
             <!--add div for image and div for h2+paragraph-->
             <!--has back ground colour-->
-            <!--keep in mind the margins -->
+            <!--keep in mind the margins (for css) -->
+            <div><img src="./images/about-us.jpg" alt="ping pong table and communal table with chairs"></div>
+            <div>
+                <h1> About Us</h1>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic atque omnis et enim libero eos rerum
+                    aspernatur qui placeat architecto sed labore debitis sit libero totam est velit ducimus?
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui error pariatur At Quis officia quo sint
+                    modi ut voluptates laudantium eos autem quaerat ad fuga fuga id quod corrupti?
+                </p>
+            </div>
         </section>
-        <section> services 
+
+        <section class="products">
             <!--use proper margins-->
             <!--total of 5 cards, will stack in mobile-->
-            <!--if doing grid method 3 rows, 6 columns-->
+            <!--if doing grid method 3 rows, 6 columns (in css)-->
+            <h1> Our Services</h1>
+            <div class="service-one">
+                <img src="./images/digital.jpg" alt="man with computer and phone">
+                <h2>Digital Transformation</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui error pariatur At Quis officia quo sint
+                    modi ut voluptates laudantium eos autem quaerat ad fuga fuga id quod corrupti?</p>
+                <button class="b-one">Digital Plans <i class="fa-solid fa-caret-right"></i></button>
+            </div>
+            <div class="service-two">
+                <img src="./images/marketing.jpg" alt="computer with bar graphs">
+                <h2>Marketing</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui error pariatur At Quis officia quo sint
+                    modi ut voluptates laudantium eos autem quaerat ad fuga fuga id quod corrupti?</p>
+                <button class="b-two">Marketing Plans <i class="fa-solid fa-caret-right"></i></button>
+            </div>
+            <div class="service-three">
+                <img src="./images/video.jpg" alt="phone with YouTube">
+                <h2>Video Production</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui error pariatur At Quis officia quo sint
+                    modi ut voluptates laudantium eos autem quaerat ad fuga fuga id quod corrupti?</p>
+                <button class="b-three">Video Plans <i class="fa-solid fa-caret-right"></i></button>
+            </div>
+            <div class="service-four">
+                <img src="./images/web.jpg" alt="phone with notebook and pen">
+                <h2>Web Development</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui error pariatur At Quis officia quo sint
+                    modi ut voluptates laudantium eos autem quaerat ad fuga fuga id quod corrupti?</p>
+                <button class="b-four">Web Plans <i class="fa-solid fa-caret-right"></i></button>
+            </div>
+            <div class="service-five"></div>
+            <img src="./images/print.jpg" alt="news stands on the street">
+            <h2>Print</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui error pariatur At Quis officia quo sint modi
+                ut voluptates laudantium eos autem quaerat ad fuga fuga id quod corrupti?</p>
+            <button class="b-five"> Print Plans <i class="fa-solid fa-caret-right"></i></button>
+        </section>
+        <section class="vision">
+            <!--needs button, use h2 (makes more sense than using h3) - style h2 later in css?-->
+            <!--separate section from our services-->
+            <img src="./images/vision.jpg" alt="paper boats">
+            <h2> Our Vision</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam rerum voluptas nesciunt quam nostrum
+                similique nihil laboriosam provident neque, recusandae voluptate temporibus. Animi accusamus id fuga
+                voluptatibus facilis iusto consequuntur.</p>
+            <button class="b-six">Learn More <i class="fa-solid fa-caret-right"></i></button>
         </section>
         <section>
-            our vision
-            <!--needs button, use h2 (makes more sense than using h3)-->
-            <!--separate section from oir services-->
-        </section>
-        <section>
-            our Team
             <!--h1 for headings-->
             <!--for css: .our-vision h2{ font-size: ;} -->
-            <!--use fex or grid--> 
+            <!--use fex or grid-->
             <!--use horizonal ruler (hr) for the lines underneath the names-->
+            <h1>Our Team</h1>
+            <!--Johns pic-->
+            <div class="playerOne-pic">
+                <img src="./images/john.jpg" alt="John Doe">
+            </div>
+            <!--John Doe text-->
+            <div class="playerOne">
+                <h2>John Doe</h2>
+                <h3><strong>CEO and Co-owner</strong></h3>
+                <hr>
+                <p>Lorem ipsum dolor sit amet. Aut dolore suscipit eum nihil quaerat eum excepturi tenetur ea possimus
+                    sapiente qui unde voluptas! Et nobis pariatur qui voluptas dolores qui quia consequuntur et
+                    inventore voluptas.</p>
+            </div>
+            <!--Bobs pic-->
+            <div class="playerTwo-pic">
+                <img src="./images/bob.jpg" alt="Bob Rite">
+            </div>
+            <!--Bob Rite text-->
+            <div class="playerTwo">
+                <h2>Bob Rite</h2>
+                <h2><strong>CEO and Co-owner</strong></h2>
+                <hr>
+                <p>Lorem ipsum dolor sit amet. Aut dolore suscipit eum nihil quaerat eum excepturi tenetur ea possimus
+                    sapiente qui unde voluptas! Et nobis pariatur qui voluptas dolores qui quia consequuntur et
+                    inventore voluptas.</p>
+            </div>
         </section>
-        <section>
-            contact us 
+        <section class="networking">
             <!--have divs for form, location, and hours of operation -->
-            <!---->
+            <!--Contact us Form-->
+            <div class="contactSheet">
+                <h1>Contact Us</h1>
+                <h2>Send us a message</h2>
+                <form>
+                    <div class="name">
+                        <label for="fullname">Full name</label>
+                        <input type="text" id="fullname" name="fullname">
+                    </div>
+                    <div class="mail">
+                        <label for="email">Email</label>
+                        <input type="text" id="email" name="email">
+                    </div>
+                    <div class="words">
+                        <label for="message">Message</label>
+                            <textarea name="message" id="message"></textarea>
+                    </div>
+                    <button type="submit" class="b-seven">Send</button>
+                </form>
+            </div>
+            <!--Hours of operation table-->
+            <div class="operations">
+                <h2>Hours of operation</h2>
+                <table>
+                    <thead>
+                        <!--adding a class to be able to change the background colour of the head of the table-->
+                        <tr>
+                            <th class="tabletitle">Days</th>
+                            <th class="tabletitle">Hours</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Monday - Friday</td>
+                            <td>9 AM - 6PM</td>
+                        </tr>
+                        <tr>
+                            <td>Saturday - Sunday</td>
+                            <td> Closed</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!--Embedded map for the Location-->
+            <div class="locate">
+                <h2>Location</h2>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2804.014567586001!2d-75.75900659999999!3d45.3485182!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce07afd713c56d%3A0xb73cbaee6d47a756!2s1385%20Woodroffe%20Ave%2C%20Nepean%2C%20ON%20K2G%201V8!5e0!3m2!1sen!2sca!4v1732815328720!5m2!1sen!2sca"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </section>
     </main>
     <footer>
         <!--copyright info-->
+        <p>&copy; Copyright Three Star Media, 2020</p>
         <!--be sure to link unsplash for the images (anchortag needed for linking unsplash)-->
+        <p>All images are taken from <a href="https://unsplash.com">Unsplash</a></p>
     </footer>
+    <script src="https://kit.fontawesome.com/cb906c9d02.js" crossorigin="anonymous"></script>
 </body>
+
 </html>

@@ -1,0 +1,131 @@
+/*mobile- first approch in styling */
+/*maximum width of the container is 1200px
+add a min-width query for the screen size of 760px and above
+use the "open-sans" google font for the webpage
+colour values used in layout: #c78c06 #ffe6ac #222* and white 
+(#c78c06 = yellow for header)
+(#ffe6ac = yellow for the blocks)
+(#222 = black colour for header and buttons)
+use grid for min. one element 
+use flexbox min. one element
+*/
+
+
+/*for applying the google font to the whole page*/
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/*for header*/
+ul{
+    list-style: none;
+    text-align: center;
+    font-size: 1.1em; 
+}
+
+li{
+    padding: 1em;
+    color: #c78c06;
+}
+
+ul :nth-child(1){
+    background-color: #c78c06;
+    color: #222;
+}
+nav{
+    background-color: #222;
+}
+
+
+/*for the about section*/
+.aboot{
+    background-color: #ffe6ac;
+}
+
+
+/*for our services*/
+.service-one{
+    background-color: #ffe6ac;
+} 
+
+.service-two{
+    background-color: #ffe6ac;
+}
+
+.service-three{
+    background-color: #ffe6ac;
+}
+
+.service-four{
+    background-color: #ffe6ac;
+}
+
+.service-five{
+    background-color: #ffe6ac;
+}
+
+
+/*for the vision section*/
+
+
+
+/*our team section*/
+.playerOne-pic, .playerOne{
+    background-color: #ffe6ac;
+}
+
+.playerTwo-pic, .playerTwo{
+    background-color: #ffe6ac;
+}
+
+
+/*contact us section*/
+
+
+
+/*footer*/
+footer{
+    background-color: #222;
+    color: #c78c06;
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+    padding-left: 15px;
+}
+
+a:link{
+    color: #c78c06;
+}
+
+a:visited{
+    color: #c78c06;
+}
+
+
+@media screen and (min-width: 560px){
+    /*for desktop*/
+
+    /*header*/
+    /*menu is side by side
+    picture is full sized*/
+
+    /*about*/
+    /*image is to the left of the text*/
+
+    /*services*/
+    /*flex or grid required here - services are stacked two on top and three on the bottom
+    centered and contained in white area*/
+
+    /*vision*/
+    /*background image with white text and button layered on top*/
+
+    /*our team*/
+    /* both pictures move beside each corresponding text
+    centered in a box using grid or flex*/
+
+    /*contact*/
+    /*send us a message and the embedded map sit on top with the store hours on the bottom...will likely need flex or grid*/
+    /*fix the table - give it borders*/
+
+
+    /*footer*/
+}

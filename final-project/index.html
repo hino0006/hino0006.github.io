@@ -5,8 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Final Project</title>
+    
+     <!--linking the Google Font "open sans"-->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+
     <link rel="reset" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+
 </head>
 <!--format for mobile not desktop-->
 
@@ -17,7 +24,7 @@
     <!--header will house the background photo, main title of page, button, and small text-->
     <!---->
     <header>
-        <nav class="navigation">
+        <nav class="navi">
             <img src="./images/logo.png" alt="star logo">
             <ul>
                 <li>Home</li>
@@ -26,12 +33,13 @@
                 <li>Team</li>
                 <li>Contact</li>
             </ul>
+            <!--adding divs to the searchbar and button -->
             <input type="text" placeholder="Search..">
             <label for="searchbox"></label>
             <button><i class="fa-solid fa-magnifying-glass"></i></button>
         </nav>
-        <img src="./images/main-banner.jpg" alt="office workspace">
-        <div>
+        <!-- placeholder - <img src="./images/main-banner.jpg" alt="office workspace">-->
+        <div class="words">
             <h1>Welcome to Three Star Media</h1>
             <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam rerum voluptas nesciunt quam nostrum
                 similique nihil laboriosam provident neque, recusandae voluptate temporibus! Animi accusamus id fuga
@@ -92,12 +100,13 @@
                     modi ut voluptates laudantium eos autem quaerat ad fuga fuga id quod corrupti?</p>
                 <button class="b-four">Web Plans <i class="fa-solid fa-caret-right"></i></button>
             </div>
-            <div class="service-five"></div>
+            <div class="service-five">
             <img src="./images/print.jpg" alt="news stands on the street">
             <h3>Print</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui error pariatur At Quis officia quo sint modi
                 ut voluptates laudantium eos autem quaerat ad fuga fuga id quod corrupti?</p>
             <button class="b-five"> Print Plans <i class="fa-solid fa-caret-right"></i></button>
+            </div>
         </section>
         <section class="vision">
             <!--needs button, use h2 (makes more sense than using h3) - style h2 later in css?-->

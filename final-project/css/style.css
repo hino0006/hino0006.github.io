@@ -16,7 +16,12 @@ body{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+
 /*for header*/
+.logo{
+    background-color: #c78c06;
+}
+
 ul{
     list-style: none;
     text-align: center;
@@ -32,54 +37,299 @@ ul :nth-child(1){
     background-color: #c78c06;
     color: #222;
 }
+
 nav{
     background-color: #222;
 }
 
+.search{
+    display: flex;
+    padding-bottom: 1em;
+    padding-left: 1em;
+}
+
+.left{
+    width: 95%;
+    height: 32px;
+}
+
+.searchBar{
+    height: 30px;
+    width: 98%;
+    font-size: 1em;
+}
+
+.fa-magnifying-glass{
+    font-size: 25px;
+    color: #c78c06;
+}
+
+.spyglass{
+    background-color: #222;
+    height: 37px; 
+    border:#c78c06 solid 1px;
+}
+
+.words{
+    background-image: url(../images/main-banner.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tint{
+   /*background-color: #222;
+    opacity: 0.7;*/
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.company{
+    font-size: 5.063em;
+    color: white;
+    padding-left: 0.3em;
+}
+
+.paragraph{
+    color: white;
+    padding: 1em;
+   border-radius: 1em; 
+}
+
+.connect{
+    background-color: #c78c06;
+    font-size: 1.2em;
+    padding: 1.5em;
+    margin: .5em;
+    border-color: #c78c06;
+}
+
+
+
+
 
 /*for the about section*/
+/*for the color of the section*/
 .aboot{
     background-color: #ffe6ac;
 }
+/*ping pong table image*/
+.ping{
+    padding: 1em;
+    width: 550px;
+    object-fit: contain;
+}
+.words-two{
+    padding: 1em;
+}
+/*adjust h2 for about us and our sevices*/
+.bio{
+    font-size: 3.375em;
+    padding-top: 0;
+}
+
+
 
 
 /*for our services*/
+    /*digital transformation*/
+.pro{
+    font-size: 3.375em;
+}
+.compcell{
+    width: 560px;
+    object-fit: contain;
+}
 .service-one{
     background-color: #ffe6ac;
+    margin-bottom: 1em;
 } 
+.words-three{
+    padding: 1em;
+}
+.title{
+    font-size: 2.25em;
+}
+.b-one{
+    background-color: #222;
+    color: white;
+    padding: 1.5em;
+    font-size: 1.25em;
+    border: #222 solid;
+}
 
+/*marketing*/
 .service-two{
     background-color: #ffe6ac;
+    margin-bottom: 1em;
+}
+.compu{
+    width: 560px;
+    object-fit: contain;
+}
+.words-four{
+    padding: 1em;
+}
+.b-two{
+    background-color: #222;
+    color: white;
+    padding: 1.5em;
+    font-size: 1.25em; 
+    border: #222 solid;
 }
 
+/*video production*/
 .service-three{
     background-color: #ffe6ac;
+    margin-bottom: 1em;
+}
+.phone{
+    width: 560px;
+    object-fit: contain;
+}
+.words-five{
+    padding: 1em;
+}
+.b-three{
+    background-color: #222;
+    color: white;
+    padding: 1.5em;
+    font-size: 1.25em; 
+    border: #222 solid; 
 }
 
+/*web dev*/
 .service-four{
     background-color: #ffe6ac;
+    margin-bottom: 1em;
+}
+.notes{
+    width: 560px;
+    object-fit: contain;
+}
+.words-six{
+    padding: 1em;
+}
+.b-four{
+    background-color: #222;
+    color: white;
+    padding: 1.5em;
+    font-size: 1.25em; 
+    border: #222 solid; 
 }
 
+
+/*print*/
 .service-five{
     background-color: #ffe6ac;
+    margin-bottom: 1.5em;
+}
+.newspaper{
+    width: 560px;
+    object-fit: contain;
+}
+.b-five{
+    background-color: #222;
+    color: white;
+    padding: 1.5em;
+    font-size: 1.25em;  
+    border: #222 solid;
 }
 
 
 /*for the vision section*/
+.vision{
+    background-image: url(../images/vision.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.words-seven{
+    color: white;
+    padding: 1em;
+}
+.title-v{
+    font-size: 2.25em;
+}
+.b-six{
+   background: rgba(0, 0, 0, 0.5);
+   color: white;
+   font-size: 1.25em;
+   padding: 1.5em;
+   border:#c78c06 solid 1px;
+}
 
 
 
 /*our team section*/
-.playerOne-pic, .playerOne{
+.title-p{
+    font-size: 2.25em;
+}
+.johnny{
     background-color: #ffe6ac;
+}
+.playerOne-pic{
+    width: 560px;
+    object-fit: contain;
+}
+.playerOne{
+    padding: 1em;
+}
+.words-ate{
+    font-size: 1.5em;
 }
 
-.playerTwo-pic, .playerTwo{
+
+.bobby{
     background-color: #ffe6ac;
 }
+.playerTwo-pic{
+    width: 560px;
+    object-fit: contain;
+}
+.playerTwo{
+    padding: 1em;
+}
+
 
 
 /*contact us section*/
+/*styling the form*/
+
+input[type=text]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+input[type=textarea]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+.b-seven{
+    background-color: #222;
+    color: #c78c06;
+    font-size: 1.2em;
+    margin-top: 1em;
+    padding: .2em;
+}
+/*styling the table*/
+table{
+   width: 100%;
+}
+table, th, td{
+    border: solid 1px;
+    border-collapse: collapse;
+    padding: 1em;
+}
+.tabletitle{
+    background-color: #ffe6ac;
+}
+
 
 
 

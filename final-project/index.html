@@ -25,7 +25,9 @@
     <!---->
     <header>
         <nav class="navi">
-            <img src="./images/logo.png" alt="star logo">
+           <div class="logo">
+                <img src="./images/logo.png" alt="star logo" >
+            </div>
             <ul>
                 <li>Home</li>
                 <li>About Us</li>
@@ -33,19 +35,24 @@
                 <li>Team</li>
                 <li>Contact</li>
             </ul>
-            <!--adding divs to the searchbar and button -->
-            <input type="text" placeholder="Search..">
-            <label for="searchbox"></label>
-            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+          <div class="search">
+                <!--adding divs to the searchbar and button -->
+                <div class="left">
+                    <input type="text" placeholder="Search" class="searchBar">
+                    <label for="searchbox"></label>
+                </div>
+                <button class="spyglass"><i class="fa-solid fa-magnifying-glass"></i></button> 
+          </div>  
         </nav>
         <!-- placeholder - <img src="./images/main-banner.jpg" alt="office workspace">-->
         <div class="words">
-            <h1>Welcome to Three Star Media</h1>
-            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam rerum voluptas nesciunt quam nostrum
-                similique nihil laboriosam provident neque, recusandae voluptate temporibus! Animi accusamus id fuga
-                voluptatibus facilis iusto consequuntur! </p>
+           <div class="tint">
+                <h1 class="company">Welcome to Three Star Media</h1>
+                <p class="paragraph"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam rerum voluptas nesciunt quam nostrum similique nihil laboriosam provident neque, recusandae voluptate temporibus! Animi accusamus id fuga voluptatibus facilis iusto consequuntur! </p>
+                
+                <button class="connect">Connect with us <i class="fa-solid fa-caret-right"></i></button>
+            </div>
         </div>
-        <button>Connect with us <i class="fa-solid fa-caret-right"></i></button>
     </header>
     <!--main will need to be split into multiple sections for the services, vision, team and contact-->
     <main>
@@ -53,9 +60,9 @@
             <!--add div for image and div for h2+paragraph-->
             <!--has back ground colour-->
             <!--keep in mind the margins (for css) -->
-            <div><img src="./images/about-us.jpg" alt="ping pong table and communal table with chairs"></div>
-            <div>
-                <h2> About Us</h2>
+            <div class="pongTable"><img src="./images/about-us.jpg" alt="ping pong table and communal table with chairs" class="ping"></div>
+            <div class="words-two">
+                <h2 class="bio"> About Us</h2>
                 <p>
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic atque omnis et enim libero eos rerum
                     aspernatur qui placeat architecto sed labore debitis sit libero totam est velit ducimus?
@@ -71,102 +78,118 @@
             <!--use proper margins-->
             <!--total of 5 cards, will stack in mobile-->
             <!--if doing grid method 3 rows, 6 columns (in css)-->
-            <h2> Our Services</h2>
+            <h2 class="pro"> Our Services</h2>
             <div class="service-one">
-                <img src="./images/digital.jpg" alt="man with computer and phone">
-                <h3>Digital Transformation</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui error pariatur At Quis officia quo sint
+                <img src="./images/digital.jpg" alt="man with computer and phone" class="compcell">
+               <div class="words-three">
+                    <h3 class="title">Digital Transformation</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui error pariatur At Quis officia quo sint
                     modi ut voluptates laudantium eos autem quaerat ad fuga fuga id quod corrupti?</p>
-                <button class="b-one">Digital Plans <i class="fa-solid fa-caret-right"></i></button>
+                    <button class="b-one">Digital Plans <i class="fa-solid fa-caret-right"></i></button>
+                </div>
             </div>
             <div class="service-two">
-                <img src="./images/marketing.jpg" alt="computer with bar graphs">
-                <h3>Marketing</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui error pariatur At Quis officia quo sint
+                <img src="./images/marketing.jpg" alt="computer with bar graphs" class="compu">
+               <div class="words-four">
+                    <h3 class="title">Marketing</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui error pariatur At Quis officia quo sint
                     modi ut voluptates laudantium eos autem quaerat ad fuga fuga id quod corrupti?</p>
-                <button class="b-two">Marketing Plans <i class="fa-solid fa-caret-right"></i></button>
+                    <button class="b-two">Marketing Plans <i class="fa-solid fa-caret-right"></i></button>
+                </div>
             </div>
             <div class="service-three">
-                <img src="./images/video.jpg" alt="phone with YouTube">
-                <h3>Video Production</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui error pariatur At Quis officia quo sint
+                <img src="./images/video.jpg" alt="phone with YouTube" class="phone">
+                <div class="words-five">
+                    <h3 class="title">Video Production</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui error pariatur At Quis officia quo sint
                     modi ut voluptates laudantium eos autem quaerat ad fuga fuga id quod corrupti?</p>
-                <button class="b-three">Video Plans <i class="fa-solid fa-caret-right"></i></button>
+                    <button class="b-three">Video Plans <i class="fa-solid fa-caret-right"></i></button>
+                </div>
             </div>
             <div class="service-four">
-                <img src="./images/web.jpg" alt="phone with notebook and pen">
-                <h3>Web Development</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui error pariatur At Quis officia quo sint
+                <img src="./images/web.jpg" alt="phone with notebook and pen" class="notes">
+                <div class="words-six">
+                    <h3 class="title">Web Development</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui error pariatur At Quis officia quo sint
                     modi ut voluptates laudantium eos autem quaerat ad fuga fuga id quod corrupti?</p>
-                <button class="b-four">Web Plans <i class="fa-solid fa-caret-right"></i></button>
+                    <button class="b-four">Web Plans <i class="fa-solid fa-caret-right"></i></button>
+                </div>
             </div>
             <div class="service-five">
-            <img src="./images/print.jpg" alt="news stands on the street">
-            <h3>Print</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui error pariatur At Quis officia quo sint modi
-                ut voluptates laudantium eos autem quaerat ad fuga fuga id quod corrupti?</p>
-            <button class="b-five"> Print Plans <i class="fa-solid fa-caret-right"></i></button>
+                <img src="./images/print.jpg" alt="news stands on the street" class="newspaper">
+                <div class="words-six">
+                    <h3 class="title">Print</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui error pariatur At Quis officia quo sint modi
+                    ut voluptates laudantium eos autem quaerat ad fuga fuga id quod corrupti?</p>
+                    <button class="b-five"> Print Plans <i class="fa-solid fa-caret-right"></i></button>
+                </div>
             </div>
         </section>
         <section class="vision">
             <!--needs button, use h2 (makes more sense than using h3) - style h2 later in css?-->
             <!--separate section from our services-->
-            <img src="./images/vision.jpg" alt="paper boats">
-            <h2> Our Vision</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam rerum voluptas nesciunt quam nostrum
+            <!--<img src="./images/vision.jpg" alt="paper boats">-->
+           <div class="words-seven">
+                <h2 class="title-v"> Our Vision</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam rerum voluptas nesciunt quam nostrum
                 similique nihil laboriosam provident neque, recusandae voluptate temporibus. Animi accusamus id fuga
                 voluptatibus facilis iusto consequuntur.</p>
-            <button class="b-six">Learn More <i class="fa-solid fa-caret-right"></i></button>
+                <button class="b-six">Learn More <i class="fa-solid fa-caret-right"></i></button>
+            </div>
         </section>
         <section>
             <!--h1 for headings-->
             <!--for css: .our-vision h2{ font-size: ;} -->
             <!--use fex or grid-->
             <!--use horizonal ruler (hr) for the lines underneath the names-->
-            <h2>Our Team</h2>
-            <!--Johns pic-->
-            <div class="playerOne-pic">
+            <h2 class="pro">Our Team</h2>
+            <div class="johnny">
+                <!--Johns pic-->
+                <div class="playerOne-pic">
                 <img src="./images/john.jpg" alt="John Doe">
-            </div>
-            <!--John Doe text-->
-            <div class="playerOne">
-                <h3>John Doe</h3>
-                <h4><strong>CEO and Co-owner</strong></h4>
-                <hr>
-                <p>Lorem ipsum dolor sit amet. Aut dolore suscipit eum nihil quaerat eum excepturi tenetur ea possimus
+                </div>
+                <!--John Doe text-->
+                <div class="playerOne">
+                    <h3 class="title-p">John Doe</h3>
+                    <h4 class="words-ate"><strong>CEO and Co-owner</strong></h4>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet. Aut dolore suscipit eum nihil quaerat eum excepturi tenetur ea possimus
                     sapiente qui unde voluptas! Et nobis pariatur qui voluptas dolores qui quia consequuntur et
                     inventore voluptas.</p>
+                </div>
             </div>
-            <!--Bobs pic-->
-            <div class="playerTwo-pic">
+            <div class="bobby">
+                <!--Bobs pic-->
+                <div class="playerTwo-pic">
                 <img src="./images/bob.jpg" alt="Bob Rite">
-            </div>
-            <!--Bob Rite text-->
-            <div class="playerTwo">
-                <h3>Bob Rite</h3>
-                <h4><strong>CEO and Co-owner</strong></h4>
-                <hr>
-                <p>Lorem ipsum dolor sit amet. Aut dolore suscipit eum nihil quaerat eum excepturi tenetur ea possimus
+                </div>
+                <!--Bob Rite text-->
+                <div class="playerTwo">
+                    <h3 class="title-p">Bob Rite</h3>
+                    <h4 class="words-ate"><strong>CEO and Co-owner</strong></h4>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet. Aut dolore suscipit eum nihil quaerat eum excepturi tenetur ea possimus
                     sapiente qui unde voluptas! Et nobis pariatur qui voluptas dolores qui quia consequuntur et
                     inventore voluptas.</p>
+                </div>
             </div>
         </section>
         <section class="networking">
             <!--have divs for form, location, and hours of operation -->
             <!--Contact us Form-->
             <div class="contactSheet">
-                <h2>Contact Us</h2>
-                <h3>Send us a message</h3>
+                <h2 class="pro">Contact Us</h2>
+                <h3 class="title-p">Send us a message</h3>
                 <form>
                     <div class="name">
                         <label for="fullname">Full name</label>
-                        <input type="text" id="fullname" name="fullname">
+                        <input type="text" id="fullname" name="fullname" class="f-one">
                     </div>
                     <div class="mail">
                         <label for="email">Email</label>
-                        <input type="text" id="email" name="email">
+                        <input type="text" id="email" name="email" class="f-one">
                     </div>
-                    <div class="words">
+                    <div class="chat">
                         <label for="message">Message</label>
                             <textarea name="message" id="message"></textarea>
                     </div>
@@ -186,12 +209,12 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Monday - Friday</td>
-                            <td>9 AM - 6PM</td>
+                            <td class="week">Monday - Friday</td>
+                            <td class="time">9 AM - 6PM</td>
                         </tr>
                         <tr>
-                            <td>Saturday - Sunday</td>
-                            <td> Closed</td>
+                            <td class="week">Saturday - Sunday</td>
+                            <td class="time"> Closed</td>
                         </tr>
                     </tbody>
                 </table>
